@@ -1,0 +1,40 @@
+16 elements
+Inner product method
+The time taken for multiplication is 2 milliseconds
+
+16 elements
+Inner product method with threads
+The time taken for multiplication is 3 milliseconds
+
+64 elements
+Inner product method
+The time taken for multiplication is 59 milliseconds
+
+64 elements
+Inner product method with threads
+The time taken for multiplication is 147 milliseconds
+
+256 elements
+Inner product method
+The time taken for multiplication is 4041 milliseconds
+
+256 elements
+Inner product method with threads
+The time taken for multiplication is 8676 milliseconds
+
+512 elements
+Inner product method
+The time taken for multiplication is 35358 milliseconds
+
+512 elements
+Inner product method with threads
+The time taken for multiplication is 73686 milliseconds
+
+1024 elements
+Inner product method
+The time taken for multiplication is 309872 milliseconds
+
+1024 elements
+Inner product method with threads
+The time taken for multiplication is 622704 milliseconds
+

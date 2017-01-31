@@ -1,0 +1,43 @@
+16 elements
+Inner product method
+The time taken for multiplication is 1 milliseconds
+
+
+Inner product method with processes
+The time taken for multiplication is 12 milliseconds
+
+
+64 elements
+Inner product method
+The time taken for multiplication is 58 milliseconds
+
+
+Inner product method with processes
+The time taken for multiplication is 40 milliseconds
+
+
+256 elements
+Inner product method
+The time taken for multiplication is 4275 milliseconds
+
+
+Inner product method with processes
+The time taken for multiplication is 2182 milliseconds
+
+
+512 elements
+Inner product method
+The time taken for multiplication is 35702 milliseconds
+
+
+Inner product method with processes
+The time taken for multiplication is 16833 milliseconds
+
+
+1024 elements
+Inner product method
+The time taken for multiplication is 335401 milliseconds
+
+
+Inner product method with processes
+The time taken for multiplication is 155750 milliseconds
