@@ -1,0 +1,15 @@
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 2$ g++ -O3 without-memset.cpp 
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 2$ time ./a.out `cat in.txt`
+32896605
+
+real	0m2.445s
+user	0m2.372s
+sys	0m0.004s
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 2$ g++ -O3 with-memset.cpp 
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 2$ time ./a.out `cat in.txt`
+32896605
+
+real	0m1.627s
+user	0m1.620s
+sys	0m0.000s
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 2$ 
