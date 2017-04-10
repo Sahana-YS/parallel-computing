@@ -1,0 +1,96 @@
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 3$ javac WorkerThread.java 
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 3$ javac MainProgram.java 
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 3$ java MainProgram 0Starting
+ArrayList,2134
+Exception in thread "pool-2-thread-1" Exception in thread "pool-2-thread-2" java.lang.ArrayIndexOutOfBoundsException: 366
+	at java.util.ArrayList.indexOf(ArrayList.java:317)
+ArrayList,3
+	at WorkerThread.run(WorkerThread.java:14)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Exception in thread "pool-2-thread-3" java.lang.ArrayIndexOutOfBoundsException: 366
+	at java.util.ArrayList.indexOf(ArrayList.java:317)
+	at WorkerThread.run(WorkerThread.java:14)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.ArrayIndexOutOfBoundsException: 366
+	at java.util.ArrayList.add(ArrayList.java:459)
+	at WorkerThread.run(WorkerThread.java:15)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Exception in thread "pool-3-thread-2" java.lang.ArrayIndexOutOfBoundsException
+Exception in thread "pool-3-thread-1" java.lang.ArrayIndexOutOfBoundsException: 2776
+	at java.util.ArrayList.add(ArrayList.java:459)
+	at WorkerThread.run(WorkerThread.java:15)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ArrayList,707
+ArrayList,2389
+ArrayList,1857
+ArrayList,2207
+Exception in thread "pool-7-thread-2" java.lang.ArrayIndexOutOfBoundsException
+ArrayList,805
+ArrayList,1826
+Exception in thread "pool-9-thread-2" java.lang.ArrayIndexOutOfBoundsException
+ArrayList,1029
+ArrayList,2147
+ArrayList,2030
+ArrayList,1531
+ArrayList,1746
+ArrayList,1733
+ArrayList,1757
+ArrayList,1412
+ArrayList,1646
+ArrayList,1708
+ArrayList,1806
+ArrayList,1439
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 3$ java MainProgram 1
+Starting
+Synchronized list,5095
+Synchronized list,4841
+Synchronized list,5022
+Synchronized list,4595
+Synchronized list,3599
+Synchronized list,3770
+Synchronized list,3279
+Synchronized list,3764
+Synchronized list,3749
+Synchronized list,4032
+Synchronized list,3205
+Synchronized list,4035
+Synchronized list,3910
+Synchronized list,3703
+Synchronized list,3372
+Synchronized list,3614
+Synchronized list,3687
+Synchronized list,3639
+Synchronized list,3287
+Synchronized list,3834
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 3$ java MainProgram 2
+Starting
+Copy on write ArrayList,1829
+Copy on write ArrayList,1945
+Copy on write ArrayList,1936
+Copy on write ArrayList,1794
+Copy on write ArrayList,1724
+Copy on write ArrayList,1709
+Copy on write ArrayList,1702
+Copy on write ArrayList,1731
+Copy on write ArrayList,1715
+Copy on write ArrayList,1759
+Copy on write ArrayList,1816
+Copy on write ArrayList,1807
+Copy on write ArrayList,1734
+Copy on write ArrayList,1740
+Copy on write ArrayList,1698
+Copy on write ArrayList,1780
+Copy on write ArrayList,1837
+Copy on write ArrayList,1764
+Copy on write ArrayList,1682
+Copy on write ArrayList,1810
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 3$ 
+
