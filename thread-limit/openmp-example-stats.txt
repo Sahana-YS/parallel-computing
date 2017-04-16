@@ -1,0 +1,71 @@
+N = 100000000
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ gcc -fopenmp -o openmp-example openmp-example.c 
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=1 ./openmp-example
+sum =4999999950000000, t = 0.747857
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=2 ./openmp-example
+sum =4999999950000000, t = 0.449874
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=4 ./openmp-example
+sum =4999999950000000, t = 0.311657
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=8 ./openmp-example
+sum =4999999950000000, t = 0.351439
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=16 ./openmp-example
+sum =4999999950000000, t = 0.312658
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=32 ./openmp-example
+sum =4999999950000000, t = 0.294304
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=64 ./openmp-example
+sum =4999999950000000, t = 0.297723
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=128 ./openmp-example
+sum =4999999950000000, t = 0.304133
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=256 ./openmp-example
+sum =4999999950000000, t = 0.329890
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=512 ./openmp-example
+sum =4999999950000000, t = 0.333617
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=1024 ./openmp-example
+sum =4999999950000000, t = 0.345196
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=2048 ./openmp-example
+sum =4999999950000000, t = 0.422972
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=4096 ./openmp-example
+sum =4999999950000000, t = 0.478074
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=8192 ./openmp-example
+sum =4999999950000000, t = 4.603165
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=16384 ./openmp-example
+
+libgomp: Thread creation failed: Resource temporarily unavailable
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ 
+
+
+N = 150000000
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=1 ./openmp-example
+sum =11249999925000000, t = 1.337155
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=2 ./openmp-example
+sum =11249999925000000, t = 0.592771
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=4 ./openmp-example
+sum =11249999925000000, t = 0.467331
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=8 ./openmp-example
+sum =11249999925000000, t = 0.452802
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=16 ./openmp-example
+sum =11249999925000000, t = 0.449846
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=32 ./openmp-example
+sum =11249999925000000, t = 0.460279
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=32 ./openmp-example
+sum =11249999925000000, t = 0.450145
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=64 ./openmp-example
+sum =11249999925000000, t = 0.478205
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=128 ./openmp-example
+sum =11249999925000000, t = 0.439250
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=256 ./openmp-example
+sum =11249999925000000, t = 0.480324
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=1024 ./openmp-example
+sum =11249999925000000, t = 0.500366
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=2048 ./openmp-example
+sum =11249999925000000, t = 0.551392
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=4096 ./openmp-example
+sum =11249999925000000, t = 0.632237
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=8192 ./openmp-example
+sum =11249999925000000, t = 4.212037
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=16384 ./openmp-example
+
+libgomp: Thread creation failed: Resource temporarily unavailable
+
+
+

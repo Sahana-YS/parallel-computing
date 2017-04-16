@@ -1,0 +1,55 @@
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ javac ThreadsMax.java 
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ java ThreadsMax 
+New thread #1
+New thread #2
+New thread #3
+New thread #4
+New thread #5
+New thread #6
+New thread #7
+New thread #8
+New thread #9
+New thread #10
+New thread #11
+New thread #12
+New thread #13
+New thread #14
+New thread #15
+New thread #16
+New thread #17
+New thread #18
+New thread #19
+New thread #20
+......
+......
+......
+......
+New thread #11664
+New thread #11665
+New thread #11666
+New thread #11667
+New thread #11668
+New thread #11669
+New thread #11670
+New thread #11671
+New thread #11672
+New thread #11673
+New thread #11674
+New thread #11675
+New thread #11676
+New thread #11677
+New thread #11678
+New thread #11679
+New thread #11680
+New thread #11681
+New thread #11682
+New thread #11683
+New thread #11684
+New thread #11685
+New thread #11686
+New thread #11687
+Exception in thread "main" java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:714)
+	at ThreadsMax.main(ThreadsMax.java:20)
+
