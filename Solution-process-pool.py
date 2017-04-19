@@ -6,6 +6,7 @@ NArray = [16, 64, 256, 512, 1024, 2048, 4096  ]
 # Writing to a file
 f = open('brute-force-4-processes-pool','w')
 for N in NArray:
+    #initialises the matrices
     matrix1 = [[0 for x in range(0,N)] for y in range(0,N)]
     matrix2 = [[0 for x in range(0,N)] for y in range(0,N)]
     matrix3 = [[0 for x in range(0,N)] for y in range(0,N)]
@@ -34,7 +35,7 @@ for N in NArray:
                 for k in range(0,N):
                     matrix3[i][j] = matrix3[i][j]+ matrix1[i][k]*matrix2[k][j]
 
-    # Each process does its part of the work in the whole matrix
+    # Each process does its part of the work in the whole matrix and returns the resultant matrix which it computes
     def calculateResult(args):
         a = args[0]
         b = args[1]
@@ -75,11 +76,14 @@ for N in NArray:
             print "Error: unable to start thread"
         return resultMatrix
 
+    #generates the matrix
     generateMatrix()
+    #time taken by the brute force approach
     t0 = int(round(time.time() * 1000))
     innerProduct()
     t1 = int(round(time.time() * 1000))
     T3 = t1 - t0
+    #writes the result into the file and prints it on the console
     print "%d elements" %(N)
     f.write("%d elements\n" %(N))
     print "Inner product method"
@@ -89,10 +93,12 @@ for N in NArray:
     print "\n"
     f.write('\n')
 
+    #time taken by the parallel method
     t6 = int(round(time.time() * 1000))
     res = innerProductParallel()
     t7 = int(round(time.time() * 1000))
     T6 = t7 - t6
+    #writes the result onto the console and into the file
     print "Inner product method with processes"
     f.write("Inner product method with processes\n")
     print "The time taken for multiplication is %d milliseconds" %(T6)
