@@ -5,7 +5,9 @@ from multiprocessing import Process,Manager
 NArray = [16, 64, 256, 512, 1024, 2048, 4096 ]
 # Writes to a file
 f = open('brute-force-4-processes','w')
+#The size of the array is taken from the NArray everytime
 for N in NArray:
+    #declares the matrices
     matrix1 = [[0 for x in range(0,N)] for y in range(0,N)]
     matrix2 = [[0 for x in range(0,N)] for y in range(0,N)]
     matrix3 = [[0 for x in range(0,N)] for y in range(0,N)]
@@ -34,7 +36,7 @@ for N in NArray:
                 for k in range(0,N):
                     matrix3[i][j] = matrix3[i][j]+ matrix1[i][k]*matrix2[k][j]
 
-    #Parallel matrix multiplication
+    #Parallel matrix multiplication - function called by each process
     def calculateResult(a,b,matrix4):
         for i in range(a,b):
             for j in range(0,N):
@@ -63,11 +65,14 @@ for N in NArray:
         except:
             print "Error: unable to start thread"
 
+    #generated the matrices
     generateMatrix()
+    #time taken for normal matrix multiplication
     t0 = int(round(time.time() * 1000))
     innerProduct()
     t1 = int(round(time.time() * 1000))
     T3 = t1 - t0
+    #prints the statistics into the file as well as on the console
     print "%d elements" %(N)
     f.write("%d elements\n" %(N))
     print "Inner product method"
@@ -77,10 +82,12 @@ for N in NArray:
     print "\n"
     f.write('\n')
 
+    #time taken for the matrix multiplication using processes
     t6 = int(round(time.time() * 1000))
     innerProductParallel()
     t7 = int(round(time.time() * 1000))
     T6 = t7 - t6
+    #prints the statistics into the file and onto the terminal
     print "Inner product method with processes"
     f.write("Inner product method with processes\n")
     print "The time taken for multiplication is %d milliseconds" %(T6)
