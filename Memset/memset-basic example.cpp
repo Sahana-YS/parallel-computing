@@ -10,11 +10,13 @@ int A[100000], i;
 clock_t tic, toc;
  
 tic = clock();
+ //Normal way of initialising
 for (int j=0; j<10000; j++) for (i=0; i<100000; i++) A[i]=j;
 toc = clock();
 cout << "Without memset:"<< (toc-tic)*1.0/CLOCKS_PER_SEC << endl;
 
 tic = clock();
+ //Using memset to initialise
 for (int j=0; j<10000; j++) memset(A, j, sizeof(A));
 toc = clock();
 cout << "With memset:"<<(toc-tic)*1.0/CLOCKS_PER_SEC << endl;
