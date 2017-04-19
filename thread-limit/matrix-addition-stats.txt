@@ -1,0 +1,47 @@
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=1 ./MatrixAdditionThreads
+time = 1.500229
+The number of threads launched are 1
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=2 ./MatrixAdditionThreads
+time = 1.548797
+The number of threads launched are 2
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=4 ./MatrixAdditionThreads
+time = 1.838908
+The number of threads launched are 4
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=8 ./MatrixAdditionThreads
+time = 1.846518
+The number of threads launched are 8
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=16 ./MatrixAdditionThreads
+time = 1.841433
+The number of threads launched are 16
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=32 ./MatrixAdditionThreads
+time = 1.838714
+The number of threads launched are 32
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=64 ./MatrixAdditionThreads
+time = 1.218472
+The number of threads launched are 64
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=128 ./MatrixAdditionThreads
+time = 1.853976
+The number of threads launched are 128
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=256 ./MatrixAdditionThreads
+time = 1.190114
+The number of threads launched are 256
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=512 ./MatrixAdditionThreads
+time = 1.840405
+The number of threads launched are 512
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=1024 ./MatrixAdditionThreads
+time = 1.879099
+The number of threads launched are 1024
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=2048 ./MatrixAdditionThreads
+time = 1.241925
+The number of threads launched are 2048
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=4096 ./MatrixAdditionThreads
+time = 1.926459
+The number of threads launched are 4096
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=8192 ./MatrixAdditionThreads
+time = 10.799069
+The number of threads launched are 8192
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ env OMP_NUM_THREADS=16384 ./MatrixAdditionThreads
+
+libgomp: Thread creation failed: Resource temporarily unavailable
+sahana@Sahana-Inspiron-3543:~/VI Semester/Parallel Computing/Blog/Post 7$ 
+
