@@ -93,6 +93,7 @@ for N in NArray:
     f.write("Inner product method with threads\n")
     print "The time taken for multiplication is %d milliseconds" %(T4)
     f.write("The time taken for multiplication is %d milliseconds\n" %(T4))
+    #prints the last element to see if the computation is proper
     print matrix3[N-1][N-1]
     print matrix4[N-1][N-1]
     print "\n"
