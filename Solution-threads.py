@@ -4,6 +4,7 @@ import threading
 NArray = [16, 64, 256, 512, 1024, 2048, 4096 ]
 #Writes to a file
 f = open('brute-force-4-threads','w')
+#declares 2 dimensional arrays
 for N in NArray:
     matrix1 = [[0 for x in range(0,N)] for y in range(0,N)]
     matrix2 = [[0 for x in range(0,N)] for y in range(0,N)]
@@ -14,13 +15,13 @@ for N in NArray:
     M01 = [[0 for x in range(0,N)] for y in range(0,N)]
     M02 = [[0 for x in range(0,N)] for y in range(0,N)]
     def generateMatrix():
-        #Generate matrix 1
+        #Generate matrix 1 with random numbers
         for x in range(0,N):
             for y in range(0,N):
                 randomNo = round(random.uniform(0,100),2)
                 matrix1[x][y] = randomNo
 
-        #Generate matrix 2
+        #Generate matrix 2 with random numbers
         for x in range(0,N):
             for y in range(0,N):
                 randomNo = round(random.uniform(0,100),2)
@@ -33,7 +34,7 @@ for N in NArray:
                 for k in range(0,N):
                     matrix3[i][j] = matrix3[i][j]+ matrix1[i][k]*matrix2[k][j]
 
-    # Computing the result parallelly
+    # Computing the result parallelly. This function is the function which is called by each thread launched.
     def calculateResult(a,b):
         for i in range(a,b):
             for j in range(0,N):
@@ -64,12 +65,14 @@ for N in NArray:
         except:
             print "Error: unable to start thread"
 
-
+    #generates the matrix
     generateMatrix()
+    #time taken for serial matrix multiplication
     t0 = int(round(time.time() * 1000))
     innerProduct()
     t1 = int(round(time.time() * 1000))
     T3 = t1 - t0
+    #prints the statistics to the file and on the console
     print "%d elements" %(N)
     f.write("%d elements\n" %(N))
     print "Inner product method"
@@ -78,10 +81,12 @@ for N in NArray:
     f.write("The time taken for multiplication is %d milliseconds\n" %(T3))
     print "\n"
     f.write('\n')
+    #time taken for matrix multiplication using threads
     t2 = int(round(time.time() * 1000))
     innerProductParallel()
     t3 = int(round(time.time() * 1000))
     T4 = t3 - t2
+    #prints the statistics onto the console and into the file
     print "%d elements" %(N)
     f.write("%d elements\n" %(N))
     print "Inner product method with threads"
